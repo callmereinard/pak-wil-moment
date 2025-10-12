@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2em;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1em;
+}
+
+h1 {
+  color: #005f73;
+}
+
+h2 {
+  color: #0a9396;
+}
+
+pre {
+  background-color: #eee;
+  padding: 1em;
+  overflow-x: auto;
+}
+
+code {
+  font-family: monospace;
+}
+
+footer {
+  margin-top: 2em;
+  font-size: 0.9em;
+  color: #666;
+}
