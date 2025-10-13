@@ -32,7 +32,9 @@ sudo -u cowrie -H bash -c "cd /opt/cowrie && python3 -m venv cowrie-env && sourc
 # copy konfigurasi contoh
 sudo -u cowrie -H bash -c "cd /opt/cowrie && cp etc/cowrie.cfg.dist etc/cowrie.cfg && cp etc/userdb.example etc/userdb.txt"
 </code></pre>
-
+<img src="assets/images/install dependencies.png" alt="Insall Dependencies" width="600">
+<img src="assets/images/pindah direktori opt dan clone buat virtualenv dan install requirements .png" alt="Pindah Direktori opt, clone, membuat virtualenv, dan Install Requirement" width="600">
+    
     <h2>Konfigurasi Logging JSON</h2>
     <p>Edit file <code>/opt/cowrie/etc/cowrie.cfg</code> dan pastikan bagian berikut aktif:</p>
     <pre><code>[output_jsonlog]
