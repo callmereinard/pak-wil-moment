@@ -1,47 +1,310 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Blog Praktikum Keamanan Jaringan & Peretasan Etis</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>📘 Blog Praktikum</h1>
-    <p>Dokumentasi dua mata kuliah: <strong>Keamanan Jaringan</strong> & <strong>Peretasan Etis</strong></p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Blog Praktikum | Gaya Scholar</title>
 
-  <nav>
-    <ul>
-      <li><a href="#network">🛡️ Keamanan Jaringan</a></li>
-      <li><a href="#ethical">🕵️ Peretasan Etis</a></li>
-    </ul>
-  </nav>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
-  <main>
-    <section id="network">
-      <h2>🛡️ Keamanan Jaringan</h2>
-      <p>Dokumentasi sesi lab untuk analisis trafik, simulasi flood, dan setup IDS menggunakan Snort.</p>
-      <ul>
-        <li><a href="session1.html">Session 1: Topologi & ICMP Capture</a></li>
-        <li><a href="session2.html">Session 2: HTTP & ICMP Flood</a></li>
-        <li><a href="session3.html">Session 3: Snort IDS Setup & Testing</a></li>
-      </ul>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Optional libraries (visual only) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
+
+    <!-- Custom overrides -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Preloader (visual) -->
+    <div id="js-preloader" class="js-preloader d-none">
+      <div class="preloader-inner"><span class="dot"></span><div class="dots"><span></span><span></span><span></span></div></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav d-flex align-items-center justify-content-between">
+              <!-- Logo -->
+              <a href="index.html" class="logo text-decoration-none">
+                <h1 class="m-0">Blog Praktikum</h1>
+              </a>
+              <!-- Menu -->
+              <ul class="nav">
+                <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                <li class="scroll-to-section"><a href="#network">Keamanan Jaringan</a></li>
+                <li class="scroll-to-section"><a href="#ethical">Peretasan Etis</a></li>
+                <li class="scroll-to-section"><a href="#courses">Sessions</a></li>
+                <li class="scroll-to-section"><a href="#contact">Kontak</a></li>
+              </ul>
+              <a class="menu-trigger d-lg-none" role="button" aria-label="Toggle menu"><span>Menu</span></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="main-banner" id="top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="hero-wrapper">
+              <div class="header-text">
+                <span class="category">Dokumentasi Praktikum</span>
+                <h2>Keamanan Jaringan & Peretasan Etis</h2>
+                <p>Kumpulan ringkasan dan catatan praktikum, lengkap dengan langkah, tangkapan layar, dan referensi.</p>
+                <div class="buttons">
+                  <div class="main-button"><a href="#courses">Lihat Sessions</a></div>
+                  <div class="icon-button"><a href="#network"><i class="fa fa-shield"></i> Keamanan Jaringan</a></div>
+                </div>
+              </div>
+              <div class="hero-illustration">
+                <img src="assets/images/VirtualBox_Kali%20Linux_29_09_2025_09_51_42.png" alt="Hero" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div class="services section" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="main-content">
+                <h4>Keamanan</h4>
+                <p>Praktik terbaik dan analisis trafik jaringan untuk meningkatkan keamanan sistem.</p>
+                <div class="main-button"><a href="#network">Lebih Lanjut</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon"><i class="fa-solid fa-network-wired"></i></div>
+              <div class="main-content">
+                <h4>Jaringan</h4>
+                <p>Simulasi flood, inspeksi paket, serta konfigurasi IDS menggunakan Snort.</p>
+                <div class="main-button"><a href="#network">Lebih Lanjut</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon"><i class="fa-solid fa-user-secret"></i></div>
+              <div class="main-content">
+                <h4>Etika</h4>
+                <p>Setup honeypot dan monitoring Wazuh untuk pembelajaran etis dan bertanggung jawab.</p>
+                <div class="main-button"><a href="#ethical">Lebih Lanjut</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Courses/Sessions -->
+    <section class="section courses" id="courses">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="section-heading">
+              <h6>Latest Sessions</h6>
+              <h2>Daftar Sesi Praktikum</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row event_box">
+          <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer design">
+            <div class="events_item">
+              <div class="thumb">
+                <a href="session1.html"><img src="assets/images/install%20dependencies.png" alt="Session 1" /></a>
+                <span class="category">Keamanan</span>
+              </div>
+              <div class="down-content">
+                <span class="author">Session 1</span>
+                <h4>Topologi & ICMP Capture</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer development">
+            <div class="events_item">
+              <div class="thumb">
+                <a href="session2.html"><img src="assets/images/sudo%20apt%20install%20and%20upgrade.png" alt="Session 2" /></a>
+                <span class="category">Jaringan</span>
+              </div>
+              <div class="down-content">
+                <span class="author">Session 2</span>
+                <h4>HTTP & ICMP Flood</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer wordpress">
+            <div class="events_item">
+              <div class="thumb">
+                <a href="session3.html"><img src="assets/images/pindah%20direktori%20opt%20dan%20clone%20buat%20virtualenv%20dan%20install%20requirements%20.png" alt="Session 3" /></a>
+                <span class="category">IDS</span>
+              </div>
+              <div class="down-content">
+                <span class="author">Session 3</span>
+                <h4>Snort Setup & Testing</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer development">
+            <div class="events_item">
+              <div class="thumb">
+                <a href="session4.html"><img src="assets/images/VirtualBox_Kali%20Linux_29_09_2025_09_51_42.png" alt="Session 4" /></a>
+                <span class="category">Honeypot</span>
+              </div>
+              <div class="down-content">
+                <span class="author">Session 4</span>
+                <h4>Install Cowrie Honeypot</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer wordpress">
+            <div class="events_item">
+              <div class="thumb">
+                <a href="session5.html"><img src="assets/images/install%20dependencies.png" alt="Session 5" /></a>
+                <span class="category">Monitoring</span>
+              </div>
+              <div class="down-content">
+                <span class="author">Session 5</span>
+                <h4>Install Wazuh Manager & Agent</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="ethical">
-      <h2>🕵️ Peretasan Etis</h2>
-      <p>Dokumentasi sesi lab untuk instalasi honeypot, monitoring log, dan integrasi Wazuh Manager & Agent.</p>
-      <ul>
-        <li><a href="session4.html">Session 4: Install Cowrie Honeypot</a></li>
-        <li><a href="session5.html">Session 5: Install Wazuh Manager & Agent</a></li>
-      </ul>
-    </section>
-  </main>
+    <!-- Thematic sections to anchor links -->
+    <div class="section about-us" id="network">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <div class="section-heading">
+              <h6>Keamanan Jaringan</h6>
+              <h2>Analisis Trafik & IDS</h2>
+              <p>Mulai dari inspeksi paket hingga deteksi serangan menggunakan Snort.</p>
+              <div class="main-button"><a href="#courses">Jelajahi Sesi</a></div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="about-card">
+              <ul>
+                <li><a href="session1.html">Session 1: Topologi & ICMP Capture</a></li>
+                <li><a href="session2.html">Session 2: HTTP & ICMP Flood</a></li>
+                <li><a href="session3.html">Session 3: Snort Setup & Testing</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <footer>
-    <p>© 2025 Reinardus | Praktikum TI Keamanan</p>
-  </footer>
-</body>
+    <div class="section about-us" id="ethical">
+      <div class="container">
+        <div class="row align-items-center flex-row-reverse">
+          <div class="col-lg-5">
+            <div class="section-heading">
+              <h6>Peretasan Etis</h6>
+              <h2>Honeypot & Monitoring</h2>
+              <p>Pengaturan lingkungan aman untuk pembelajaran dan pengamatan serangan.</p>
+              <div class="main-button"><a href="#courses">Jelajahi Sesi</a></div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="about-card">
+              <ul>
+                <li><a href="session4.html">Session 4: Install Cowrie Honeypot</a></li>
+                <li><a href="session5.html">Session 5: Install Wazuh Manager & Agent</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-us section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 align-self-center">
+            <div class="section-heading">
+              <h6>Kontak</h6>
+              <h2>Tanya atau saran?</h2>
+              <p>Silakan kirimkan pesan atau ide perbaikan terkait dokumentasi praktikum ini.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact-us-content">
+              <form id="contact-form" onsubmit="event.preventDefault(); alert('Terima kasih!');">
+                <div class="row g-3">
+                  <div class="col-lg-12">
+                    <input type="text" name="name" id="name" placeholder="Nama" required />
+                  </div>
+                  <div class="col-lg-12">
+                    <input type="email" name="email" id="email" placeholder="Email" required />
+                  </div>
+                  <div class="col-lg-12">
+                    <textarea name="message" id="message" placeholder="Pesan" rows="4"></textarea>
+                  </div>
+                  <div class="col-lg-12">
+                    <button type="submit" id="form-submit" class="orange-button">Kirim</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="col-lg-12">
+          <p>
+            &copy; 2025 Reinardus. Style terinspirasi dari template Scholar &mdash; Design: 
+            <a href="https://templatemo.com" target="_blank" rel="nofollow noopener">TemplateMo</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      // Simple mobile menu toggle
+      document.querySelector('.menu-trigger')?.addEventListener('click', function () {
+        document.querySelector('.main-nav .nav')?.classList.toggle('open');
+      });
+      // Sticky header effect
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('.header-area');
+        if (window.scrollY > 10) header?.classList.add('is-sticky');
+        else header?.classList.remove('is-sticky');
+      });
+    </script>
+  </body>
 </html>
